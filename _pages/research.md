@@ -1,10 +1,9 @@
 ---
-permalink: /
+permalink: /research/
 title: "My Physics Research"
 excerpt: "Research"
 author_profile: true
-redirect_from: 
-  - "/research/"
+redirect_from:
   - "/research.html"
 ---
 
