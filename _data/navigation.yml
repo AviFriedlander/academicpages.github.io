@@ -13,7 +13,7 @@ main:
 #    url: /portfolio/
 
   - title: "Physics Research"
-    url: /year-archive/
+    url: /research/
 
   - title: "Blog/Coding Projects"
     url: /year-archive/
@@ -23,5 +23,5 @@ main:
 #  - title: "CV"
 #    url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+#  - title: "Guide"
+#    url: /markdown/
