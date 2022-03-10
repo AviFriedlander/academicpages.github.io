@@ -25,10 +25,10 @@ Talks
 =======
 I have presented my reserach at a number of different conferences and seminars including
 
-*Dark Chatter - University of Sydney [Video Here](https://www.youtube.com/watch?v=3Zv439UQTwM)
-*Particles and Nuclei International Conference (PANIC2021)
-*Topics in Astroparticle and Underground Physics (TAUP2021) [Video Here](https://www.youtube.com/watch?v=xNMW4kn_Swg)
-*Canadian Associatiion of Physicists Congress (CAP2021)
-*Electroweak Phase Transition+ Seminar Series
+* Dark Chatter - University of Sydney [Video Here](https://www.youtube.com/watch?v=3Zv439UQTwM)
+* Particles and Nuclei International Conference (PANIC2021)
+* Topics in Astroparticle and Underground Physics (TAUP2021) [Video Here](https://www.youtube.com/watch?v=xNMW4kn_Swg)
+* Canadian Associatiion of Physicists Congress (CAP2021)
+* Electroweak Phase Transition+ Seminar Series
 
 
