@@ -20,10 +20,15 @@ Talks
 =======
 I have presented my reserach at a number of different conferences and seminars including
 
-* Dark Chatter - University of Sydney [Video Here](https://www.youtube.com/watch?v=3Zv439UQTwM)
-* Particles and Nuclei International Conference (PANIC2021)
-* Topics in Astroparticle and Underground Physics (TAUP2021) [Video Here](https://www.youtube.com/watch?v=xNMW4kn_Swg)
-* Canadian Associatiion of Physicists Congress (CAP2021)
-* Electroweak Phase Transition+ Seminar Series
+* February 2022 - _Primordial Black Hole Dark Matter in the Context of Extra Dimensions_
+  * University of Sydney [Video Here](https://www.youtube.com/watch?v=3Zv439UQTwM)
+* September 2021 - _Signatures of Primordial Black Holes in Theories of Large Extra Dimensions_
+  * Particles and Nuclei International Conference (PANIC2021)
+* August 2021 - _Signatures of Primordial Black Holes in Theories of Large Extra Dimensions_
+  * Topics in Astroparticle and Underground Physics (TAUP2021) [Video Here](https://www.youtube.com/watch?v=xNMW4kn_Swg)
+* June 2021 - _Signatures of Primordial Black Holes in Theories of Large Extra Dimensions_
+  * Canadian Associatiion of Physicists Congress (CAP2021)
+* November 2020 - _Wall Speed and Shape in Singlet-Assisted in Strong Electroweak Phase Transitions_
+  * Electroweak Phase Transition+ Seminar Series
 
 
