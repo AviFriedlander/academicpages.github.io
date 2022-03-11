@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my website! This website is still under construction so I will be slowly adding more information in the future. For now, this website serves two main pages. The ["Physics"](/research) page describes my research interests and some of the projects I have worked on so far as a graduate student. Physics is not my only interest though and I want a place to write about other projects I work on. Therefore, the ["Blog/Coding Projects"](/year-archive) page contains a blog where I will write articles about different coding projects I work on. These coding projects will mostly relating to hockey analytics however that may change if I think of other topics I would like to explore. If you would like to contact me, please feel free to use any of the methods in the sidebar on the left of this page.
+Welcome to my website! This website is still under construction so I will be slowly adding more information in the future. For now, this website serves two main pages. The ["Physics Research"](/research) page describes my research interests and some of the projects I have worked on so far as a graduate student. Physics is not my only interest though and I want a place to write about other projects I work on. Therefore, the ["Blog/Coding Projects"](/year-archive) page contains a blog where I will write articles about different coding projects I work on. These coding projects will mostly be about hockey analytics however that may change if I think of other topics I would like to explore. If you would like to contact me, please feel free to use any of the methods in the sidebar on the left of this page.
 
 
 About Me
