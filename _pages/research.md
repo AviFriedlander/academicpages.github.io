@@ -14,6 +14,12 @@ The shortest description I have of my research is that I study particles in spac
 
 Publications
 ==============
+**A. Friedlander**, K. J. Mack, S. Schon, N. Song, and A. C. Vincent, _Primordial black holes in the context of extra dimensions_, [arxiv:2201.11761](https://arxiv.org/abs/2201.11761).
+
+B. Laurent, J. M. Cline, **A. Friedlander**, D-M. He, K. Kainulainen, and D. Tucker-Smith, _Baryogenesis and gravity waves from a UV-completed electroweak phase transition_, [Phys. Rev. D 103, 123529](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.123529) (2021). [arxiv:2102.12490](https://arxiv.org/abs/2102.12490).
+
+**A. Friedlander**, I. Banta, J. M. Cline, and D. Tucker-Smith, _Wall speed and shape in singlet-assisted strong electroweak phase transitions_, [Phys. Rev. D 103, 055020](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.055020) (2021). [arxiv:2009.14295](https://arxiv.org/abs/2009.14295).
+
 For an up-to-date list of my publication, [see my Inspire-HEP page](https://inspirehep.net/authors/1851090?ui-citation-summary=true).
 
 Talks
