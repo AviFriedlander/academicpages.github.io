@@ -10,6 +10,7 @@ tags:
   - statistics
   - expected goals
   - hockey
+permalink: /drafts/abc123
 ---
 Evaluating Expected Goals Models
 =================================
