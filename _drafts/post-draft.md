@@ -1,8 +1,8 @@
 ---
 layout: single
 title:  "Evaluating xG"
-include-math: True
 header:
+  include-math: True
   teaser: "unsplash-gallery-image-2-th.jpg"
 categories: 
   - Jekyll
