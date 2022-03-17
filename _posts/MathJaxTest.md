@@ -1,7 +1,7 @@
 ---
-title: 'First Post'
+title: 'Mathjax Test'
 date: 2022-03-16
-permalink: /posts/2022/03/first-post/
+permalink: /posts/2022/03/Mathjax/
 include-math: True
 tags:
   - Testing
