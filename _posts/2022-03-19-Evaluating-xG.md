@@ -48,7 +48,9 @@ If you look at the above statement and say “Wait, that is the probability of t
 ### Turning around the probability
 In the discussion above and in what follows, I talk about maximizing $P(\text{data} | \text{model})$ which is the probability of a sequence of observations happening assuming that a certain model is correct. There are contexts where this is the quantity that is needed. For example, when making a projection for what will happen in the future, you are implicitly assuming a model and then making a prediction for the probability of different "data" results occurring. However, when evaluating or training an xG model, all we have is the data that has occurred and we are using that to determine the probability that a model is correct. For that we need to determine $P(\text{model} | \text{data})$. In order to make that conversion, we need to use Bayes' theorem. I am not going to derive or explain the origin of Bayes' theorem (for a very nice explanation watch [this 3Blue1Brown video](https://youtu.be/HZGCoVF3YvM).) Rather I will just present the result:
 $$
-P(\text{model} | \text{data}) = \frac{P(\text{data}|\text{model} P(\text{model}) }{ P(\text{data}) } 
+\begin{equation}
+P(\text{model} | \text{data}) = \frac{P(\text{data}|\text{model}) P(\text{model}) }{ P(\text{data}) } 
+\end{equation}
 $$
 where $P(\text{model})$ is known as the “prior” and $P(\text{data})$ is a normalization constant that does not depend on the model. 
 
@@ -57,17 +59,22 @@ When optimizing a model on a specific data set or comparing two models ability t
 ### Maximizing the Likelihood 
 At this point we have established everything that is theoretically needed to optimize and evaluate xG models. All that is left is turning what we have into a format that is slightly easier to use and looking at a simple example to help illustrate how this all works. As discussed above the probability of independent events occurring multiplies. It is sometimes easier to deal with addition rather than multiplication. That change can be made by taking the logarithm of Equation 3. Probabilities are always less than one so the logarithm is negative. In order to only deal with positive numbers, it is common to flip the sign and minimize the negative logarithm instead of maximizing the probability itself. For this type of problem (determining the chance of an event occurring or not), the negative logarithm of the likelihood is known as the log loss and can be written as
 $$
--\log\bigg(P(\text{data} | \text{model})\bigg) = \sum_i \begin{cases}
+\begin{equation}
+-\log\bigg(P(\text{data} | \text{model})\bigg) = \sum_i 
+\begin{cases}
 \log(p_i), \text{goal} \\
 \log(1-p_i), \text{not goal}
 \end{cases}
 \equiv \text{log loss}
+\end{equation}
+$$
 where $\sum$ indicates that we are adding the logarithm of the probabilities instead of multiplying. It is important to emphasize that whether you maximize the likelihood or minimize the log loss is only a matter of convenience and does not change the result.
 
 ### A short example
 At this point it is nice to work through a simple example to see how this can work in practice. This can be done with the simplest possible xG model where all shots have the same value, $p$. This is a model that knows nothing about an individual shot and will just determine what the chance the average shot has of becoming a goal. If in a data set there are $G$ goals and $S$ total shots then the log loss can be easily calculated because there are $G$ events that had a $p$ chance of occurring and $(S-G)$ events that had a $1-p$ chance of occurring. Therefore the total log loss is
-$$
+$$ \begin{equation}
 \text{log loss} = -G \log(p) - (S-G)\log(1-p) .
+\end{equation}
 $$
 The log loss will be minimized when its derivative is equal to zero so
 $$
