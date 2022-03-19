@@ -19,13 +19,17 @@ For the purpose of this article it is not important to understand the inner work
 
 ### Statistical foundation
 In order to build a method for evaluating how well an xG model performs over a large sample with thousands of shots, it is useful to establish a statistical foundation. Starting off with a single shot that has been assigned an xG value of $p$ we can say
+
 $$
 P(\text{goal} | p) = p
 $$
+
 and
 $$
+
 P(\text{not goal}|p) = 1-p
 $$
+
 where $P(\text{data} | \text{model})$, sometimes referred to as the likelihood, is the probability of observing the data assuming the model is correct. In this example with a single shot the "data" is whether the shot is a goal or not and the "model" is the xG value.
 
 Extending this idea of probability to observations of more than a single shot, requires the two facts:  
@@ -33,12 +37,14 @@ Extending this idea of probability to observations of more than a single shot, r
 2. If there are two events which respectively have probabilities of $p_1$ and $p_2$ of occurring, then the probability of both occurring is $p_1 \times p_2$.
 
 Therefore, if we have a data set that contains a collection of shots and whether each one resulted in a goal or not and we have a model that provides a chance of each shot being a goal we can describe the probability of observing the exact sequence of goals and non-goals as
+
 $$
 P(\text{data} | \text{model}) = \prod_i \begin{cases}
 p_i, \text{goal} \\
 1-p_i, \text{not goal.}
 \end{cases}
 $$
+
 Here the $\prod$ symbol simply means we are multiplying and $p_i$ is the xG value assigned to the $i$th shot.
 
 This is all the statistics we need to know how to compare two xG models. For each xG model you can calculate the probability of observing the actual results and conclude that the model that is more likely to produce what was observed is the “better” model. Alternatively if you are in the process of building an xG model, you can tune the xG model parameters in order to maximize the probability in Equation 3.
@@ -47,11 +53,13 @@ If you look at the above statement and say “Wait, that is the probability of t
 
 ### Turning around the probability
 In the discussion above and in what follows, I talk about maximizing $P(\text{data} | \text{model})$ which is the probability of a sequence of observations happening assuming that a certain model is correct. There are contexts where this is the quantity that is needed. For example, when making a projection for what will happen in the future, you are implicitly assuming a model and then making a prediction for the probability of different "data" results occurring. However, when evaluating or training an xG model, all we have is the data that has occurred and we are using that to determine the probability that a model is correct. For that we need to determine $P(\text{model} | \text{data})$. In order to make that conversion, we need to use Bayes' theorem. I am not going to derive or explain the origin of Bayes' theorem (for a very nice explanation watch [this 3Blue1Brown video](https://youtu.be/HZGCoVF3YvM).) Rather I will just present the result:
+
 $$
 \begin{equation}
 P(\text{model} | \text{data}) = \frac{P(\text{data}|\text{model}) P(\text{model}) }{ P(\text{data}) } 
 \end{equation}
 $$
+
 where $P(\text{model})$ is known as the “prior” and $P(\text{data})$ is a normalization constant that does not depend on the model. 
 
 When optimizing a model on a specific data set or comparing two models ability to explain the same data, the $P(\text{data})$ normalization constant will not change and therefore can be safely ignored. The prior, however, is more important. As the name suggests, this factor quantifies any “prior” knowledge about what we expect the true model to be. There are situations where the prior is very important. An intuitive example that illustrates why priors are important is if you own dice for a board game which you have used for years and one day you start a game rolling five 1’s in a row. The most reasonable assumption is that the dice have not changed and that the five 1’s in a row is just a random coincidence. The prior is a way of consistently incorporating expectations and prior knowledge in a systematic manner. In the case of xG models, it makes sense to compare models without any bias for what the model should be. Therefore, the prior will be “flat”, without bias towards any given model, and maximizing $P(\text{model} | \text{data})$ is the same as maximizing $P(\text{data} | \text{model})$[^1].
