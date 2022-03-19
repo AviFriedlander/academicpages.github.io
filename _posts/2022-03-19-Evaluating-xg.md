@@ -1,13 +1,13 @@
 ---
 layout: single
-title:  "test3"
+title:  "Evaluating xG"
 header:
   include-math: True
 tags:
   - statistics
   - expected goals
   - hockey
-permalink: /posts/2022/03/test3
+permalink: /posts/2022/03/evaluating-xg
 ---
 How to Evaluate Expected Goals Models?
 =================================
@@ -67,7 +67,7 @@ When optimizing a model on a specific data set or comparing two models ability t
 At this point we have established everything that is theoretically needed to optimize and evaluate xG models. All that is left is turning what we have into a format that is slightly easier to use and looking at a simple example to help illustrate how this all works. As discussed above the probability of independent events occurring multiplies. It is sometimes easier to deal with addition rather than multiplication. That change can be made by taking the logarithm of Equation 3. Probabilities are always less than one so the logarithm is negative. In order to only deal with positive numbers, it is common to flip the sign and minimize the negative logarithm instead of maximizing the probability itself. For this type of problem (determining the chance of an event occurring or not), the negative logarithm of the likelihood is known as the log loss and can be written as
 
 $$
--\log\bigg(P(\text{data} | \text{model})\bigg) = \sum_i 
+-\log\bigg(P(\text{data} | \text{model})\bigg) = -\sum_i 
 \begin{cases}
 \log(p_i),& \text{goal} \\
 \log(1-p_i),& \text{not goal}
