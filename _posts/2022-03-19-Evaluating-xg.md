@@ -64,10 +64,10 @@ where $P(\text{model})$ is known as the “prior” and $P(\text{data})$ is a no
 When optimizing a model on a specific data set or comparing two models ability to explain the same data, the $P(\text{data})$ normalization constant will not change and therefore can be safely ignored. The prior, however, is more important. As the name suggests, this factor quantifies any “prior” knowledge about what we expect the true model to be. There are situations where the prior is very important. An intuitive example that illustrates why priors are important is if you own dice for a board game which you have used for years and one day you start a game rolling five 1’s in a row. The most reasonable assumption is that the dice have not changed and that the five 1’s in a row is just a random coincidence. The prior is a way of consistently incorporating expectations and prior knowledge in a systematic manner. In the case of xG models, it makes sense to compare models without any bias for what the model should be. Therefore, the prior will be “flat”, without bias towards any given model, and maximizing $P(\text{model}\vert\text{data})$ is the same as maximizing $P(\text{data}\vert\text{model})$[^1].
 
 ### Maximizing the Likelihood 
-At this point we have established everything that is theoretically needed to optimize and evaluate xG models. All that is left is turning what we have into a format that is slightly easier to use and looking at a simple example to help illustrate how this all works. As discussed above the probability of independent events occurring multiplies. It is sometimes easier to deal with addition rather than multiplication. That change can be made by taking the logarithm of Equation 3. Probabilities are always less than one so the logarithm is negative. In order to only deal with positive numbers, it is common to flip the sign and minimize the negative logarithm instead of maximizing the probability itself. For this type of problem (determining the chance of an event occurring or not), the negative logarithm of the likelihood is known as the log loss and can be written as
+At this point we have established everything that is theoretically needed to optimize and evaluate xG models. All that is left is turning what we have into a format that is slightly easier to use and looking at a simple example to help illustrate how this all works. As discussed above the probability of independent events occurring multiplies. It is sometimes easier to deal with addition rather than multiplication. That change can be made by taking the logarithm of Equation 3. Probabilities are always less than one so the logarithm is negative. In order to only deal with positive numbers, it is common to flip the sign and minimize the negative logarithm instead of maximizing the probability itself. Lastly, when using a metric to compare models it is useful for the metric to not be penalized for using a larger dataset. The negative logarithm of the likelihood grows as you add more data points which can be compensated by dividing it by the total number of data points. For this type of problem (determining the chance of an event occurring or not), the negative logarithm of the likelihood divided by the number of data points is known as the log loss and can be written as
 
 $$
--\log\bigg(P(\text{data} | \text{model})\bigg) = -\sum_i 
+-\log\bigg(P(\text{data} | \text{model})\bigg) = \frac{-1}{N}\sum_i 
 \begin{cases}
 \log(p_i),& \text{goal} \\
 \log(1-p_i),& \text{not goal}
@@ -75,13 +75,13 @@ $$
 \equiv \text{log loss}
 $$
 
-where $\sum$ indicates that we are adding the logarithm of the probabilities instead of multiplying. It is important to emphasize that whether you maximize the likelihood or minimize the log loss is only a matter of convenience and does not change the result.
+where $N$ is the number of data points and $\sum$ indicates that we are adding the logarithm of the probabilities instead of multiplying. It is important to emphasize that whether you maximize the likelihood or minimize the log loss is only a matter of convenience and does not change the result.
 
 ### A short example
 At this point it is nice to work through a simple example to see how this can work in practice. This can be done with the simplest possible xG model where all shots have the same value, $p$. This is a model that knows nothing about an individual shot and will just determine what the chance the average shot has of becoming a goal. If in a data set there are $G$ goals and $S$ total shots then the log loss can be easily calculated because there are $G$ events that had a $p$ chance of occurring and $(S-G)$ events that had a $1-p$ chance of occurring. Therefore the total log loss is
 
 $$
-\text{log loss} = -G \log(p) - (S-G)\log(1-p) .
+\text{log loss} = \frac{-G}{S} \log(p) - \frac{S-G}{S}\log(1-p) .
 $$
 
 The log loss will be minimized when its derivative is equal to zero so
