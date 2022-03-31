@@ -14,7 +14,7 @@ The shortest description I have of my research is that I study particles in spac
 
 Extra Dimension Black Holes as Dark Matter
 ------------------------------------------
-| ![Image illustrating the evolution of black holes](BHevolution.jpeg "Image illustrating the evolution of black holes") | 
+| ![Image illustrating the evolution of black holes](https://raw.githubusercontent.com/AviFriedlander/avifriedlander.github.io/master/_pages/BHevolution.jpeg "Image illustrating the evolution of black holes") | 
 |:--| 
 |_An illustration of the life of extra-dimension black holes. Going from left to right: in the very early universe high-energy particles forming microscopic black holes. While the Universe is hot and dense, the black holes grows by consuming the surrounding matter. Finally, once the universe cools, the black holes stop growing and instead evaporate, potentially impacting its surroundings in ways that could observe today._ |
 
