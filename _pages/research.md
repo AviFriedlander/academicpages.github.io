@@ -12,13 +12,9 @@ Welcome to my physics research page! Here I talk about my research interests and
 The shortest description I have of my research is that I study particles in space. More broadly, I try and use observations of space to better understand the fundamental building blocks of the Universe and the laws that govern them. During my PhD I have specifically been studying the impact different dark matter models have on astrophysical processes. This has resulted in a [paper](https://arxiv.org/abs/2201.11761) where I, along with a group of collaborators studied the observational signatures that would be created by primordial black holes in theories with additional dimensions. My masters research focused on determining the details of bubble growth during a strong electroweak phase transition in the early universe which is important for understnading whether that phase transition is able to provide an explanation for the observed matter - anti-matter asymmetry.
 
 ### Extra Dimension Black Holes as Dark Matter
-| ![Image illustrating the evolution of black holes](https://raw.githubusercontent.com/AviFriedlander/avifriedlander.github.io/master/_pages/BHevolution.jpeg "Image illustrating the evolution of black holes") | 
-| :-------------| 
-| _An illustration of the life of extra-dimension black holes. Going from left to right: in the very early universe high-energy particles forming microscopic black holes. While the Universe is hot and dense, the black holes grows by consuming the surrounding matter. Finally, once the universe cools, the black holes stop growing and instead evaporate, potentially impacting its surroundings in ways that could observe today._ |
-
 | ![Image illustrating the evolution of black holes](https://raw.githubusercontent.com/AviFriedlander/avifriedlander.github.io/master/_pages/BHevolution.jpeg "Image illustrating the evolution of black holes") |
 | --------|
-| cell1   | 
+| _An illustration of the life of extra-dimension black holes. Going from left to right: in the very early universe high-energy particles forming microscopic black holes. While the Universe is hot and dense, the black holes grows by consuming the surrounding matter. Finally, once the universe cools, the black holes stop growing and instead evaporate, potentially impacting its surroundings in ways that could observe today._   | 
 
 
 The main topic I have studied so far during my PhD is whether dark matter is made up of lots of extra-dimension black holes. All stars and other bright objects in the Universe that are made up of the particles we know and understand in the Standard Model of Particle Physics makes up only about 15% of the matter in the Universe. The other 85% of matter we generally know very little about and is called "_dark matter_". 
