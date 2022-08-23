@@ -29,7 +29,7 @@ The collection of the currently known laws and particles that exist in our Unive
 A popular proposal, called _Electroweak Baryogenesis_, is that during a phase transition in the very early Universe bubbles form and [_sphaleron_](https://en.wikipedia.org/wiki/Sphaleron) interactions at the wall of the bubble can produce the observed asymmetry between matter and anti-matter. Whether this explanation works depends strongly on the dynamics of the bubble wall, specifically how fast the walls expand during the phase transition. During my masters, I improved calculations for the bubble wall speed demonstrating that in an extension of the Standard Model which includes an additional scalar field, the walls move sufficiently slowly such that the matter anti-matter asymmetry could be produced.
 
 ## Publications
-**A. Friedlander**, K. J. Mack, S. Schon, N. Song, and A. C. Vincent, _Primordial black holes in the context of extra dimensions_, [arxiv:2201.11761](https://arxiv.org/abs/2201.11761).
+**A. Friedlander**, K. J. Mack, S. Schon, N. Song, and A. C. Vincent, _Primordial black holes in the context of extra dimensions_, [Phys. Rev. D 105, 103509](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.105.103508) (2022). [arxiv:2201.11761](https://arxiv.org/abs/2201.11761).
 
 B. Laurent, J. M. Cline, **A. Friedlander**, D-M. He, K. Kainulainen, and D. Tucker-Smith, _Baryogenesis and gravity waves from a UV-completed electroweak phase transition_, [Phys. Rev. D 103, 123529](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.103.123529) (2021). [arxiv:2102.12490](https://arxiv.org/abs/2102.12490).
 
@@ -40,6 +40,10 @@ For an up-to-date list of my publication, [see my Inspire-HEP page](https://insp
 ## Talks
 I have presented my reserach at a number of different conferences and seminars including
 
+* August 2022 - _Signatures of Primordial Black Holes in Theories of Large Extra Dimensions_
+  * TeV Particle Astrophysics 2022 ([TeVPA 2022](https://indico.cern.ch/event/1082486/))
+* May 2022 - _Signatures of Primordial Black Holes in Theories of Large Extra Dimensions_
+  * Phenomenology 2022 Symposium ([PHENO 2022](https://indico.cern.ch/event/1089132/))
 * February 2022 - _Primordial Black Hole Dark Matter in the Context of Extra Dimensions_
   * University of Sydney [Video Here](https://www.youtube.com/watch?v=3Zv439UQTwM)
 * September 2021 - _Signatures of Primordial Black Holes in Theories of Large Extra Dimensions_
